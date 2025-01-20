@@ -1,0 +1,24 @@
+{
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "run": "node bin/index.js",
+        "dev": "nodemon bin/index.js"
+    },
+    "devDependencies": {
+        "eslint": "^8.4.1",
+        "eslint-config-google": "^0.14.0"
+    },
+    "dependencies": {
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "csrf": "^3.1.0",
+        "express": "^4.21.2",
+        "express-session": "^1.18.1",
+        "helmet": "^8.0.0",
+        "jsonwebtoken": "^9.0.2",
+        "mysql2": "^3.12.0"
+    }
+}

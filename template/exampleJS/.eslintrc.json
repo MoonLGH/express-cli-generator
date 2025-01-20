@@ -1,33 +1,20 @@
 {
     "ignorePatterns": [
-    "./template/*",
-    "./template/**/**",
-    "./template/**/**/**"
     ],
     "root":true,
     "env": {
-        "es6": true,
         "es2021": true,
         "node": true,
         "browser": true
     },
     "extends": [
         "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
         "google"
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "sourceType" :"module",
-        "project": ["tsconfig.json"],
-        "ecmaVersion": 2021,
-    },
     "plugins": [
-        "@typescript-eslint"
     ],
     "rules": {
         "no-var": "error",
-        "@typescript-eslint/no-non-null-assertion": "off",
         "require-jsdoc":"off",
         "max-len": "off",
         "new-cap": "off",
@@ -35,7 +22,6 @@
             "warn",
             "double"
         ],
-        "@typescript-eslint/await-thenable": 2,
         "linebreak-style": "off",
         "camelcase": "off"
     }
