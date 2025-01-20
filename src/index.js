@@ -4,7 +4,7 @@ import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 import inquirer from 'inquirer';
-import originalNcp from 'ncp';  // Renamed import
+import originalNcp from 'ncp';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 

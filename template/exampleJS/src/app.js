@@ -5,13 +5,14 @@ import cors from 'cors';
 import helmet from 'helmet';
 import csrf from 'csrf';
 import dotenv from 'dotenv';
-import { authRoutes, userRoutes } from './routes';
+import { authRoutes, userRoutes,mainRoutes } from './routes';
 
 dotenv.config();
 
 const app = express();
 
 // Middlewares
+app.set("view engine", "ejs");
 app.use(helmet()); // Security headers
 app.use(cors()); // Enable CORS
 app.use(cookieParser()); // Cookie parsing
@@ -21,10 +22,12 @@ app.use(session({
   resave: false,
   saveUninitialized: true
 }));
+app.set("views", path.join(__dirname, "views"));
 
 // Routes
 app.use('/auth', authRoutes);
 app.use('/user', userRoutes);
+app.use('/', mainRoutes);
 
 // CSRF Protection
 app.use((req, res, next) => {
