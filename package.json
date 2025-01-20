@@ -49,5 +49,5 @@
     "inquirer": "^12.3.2",
     "ncp": "^2.0.0"
   },
-  "name": "exprs"
+  "name": "exppr"
 }
