@@ -44,7 +44,7 @@ switch (command) {
     }]).then(async (answers) => {
       const { projectName } = answers;
       const sourceDir = path.join(__dirname, '../template/exampleJS');  // Path to the exampleJS directory
-      const targetDir = path.join(__dirname, projectName);  // Path to the new project directory
+      const targetDir = path.join(process.cwd(), projectName);  // Path to the new project directory
 
       try {
         // Check if the directory already exists
@@ -83,5 +83,5 @@ switch (command) {
     });
     break;
   default:
-    console.log('Usage: exp [run/dev/generate]');
+    console.log('Usage: exppr [run/dev/generate]');
 }
