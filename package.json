@@ -1,19 +1,9 @@
 {
-  "version": "0.0.0",
-  "name": "TODO",
-  "umd:name": "TODO",
-  "repository": "TODO_USERNAME/TODO_REPO",
-  "description": "TODO_MODULE_DESCRIPTION",
-  "unpkg": "dist/index.min.js",
+  "version": "1.0.0",
+  "repository": "MoonLGH/exp",
   "type": "module",
   "main": "test/index.js",
-  "types": "types/index.d.ts",
   "license": "MIT",
-  "author": {
-    "name": "TODO_YOUR_NAME",
-    "email": "YOUR_EMAIL@TODO.com",
-    "url": "https://TODO_WEBSITE.com"
-  },
   "files": [
     "dist",
     "types"
@@ -34,15 +24,8 @@
   "scripts": {
     "start": "node test/index.js",
     "generate": "node dist/generate && npm i",
-    "build": "rollup -c",
-    "prepublishOnly": "npm run build",
     "types": "tsc --noEmit"
   },
-  "keywords": [
-    "TODO",
-    "module",
-    "keywords"
-  ],
   "devDependencies": {
     "@rollup/plugin-node-resolve": "13.1.3",
     "@types/ncp": "^2.0.8",
