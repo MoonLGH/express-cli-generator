@@ -1,0 +1,28 @@
+{
+    "ignorePatterns": [
+    ],
+    "root":true,
+    "env": {
+        "es2021": true,
+        "node": true,
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "google"
+    ],
+    "plugins": [
+    ],
+    "rules": {
+        "no-var": "error",
+        "require-jsdoc":"off",
+        "max-len": "off",
+        "new-cap": "off",
+        "quotes": [
+            "warn",
+            "double"
+        ],
+        "linebreak-style": "off",
+        "camelcase": "off"
+    }
+}
